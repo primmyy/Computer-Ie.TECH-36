@@ -1,12 +1,284 @@
-<<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduce</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Boonyarit Homruen </title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Additional stylesheets-->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!--Font awesome stylesheets-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!--Icon for title bar-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!--Theme color for android and android icon-->
+    <meta name="theme-color" content="#26418f">
+    <link rel="icon" sizes="192x192" href="img/fire.png">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
 </head>
+
 <body>
-    My name is Boonyarit Homruen
+
+    <!--Navigation bar -->
+    <div class="container">
+        <nav class="navbar navbar-default" id="mainnavigationbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <a class="navbar-brand col-lg-1 col-md-1 col-sm-1 col-xs-1 logo" href="index.html"><span class="glyphicon glyphicon-fire itsSize" aria-hidden="true"></span></a>
+                    <ul class="navbar-nav navbar-right list-unstyled col-lg-11 col-md-11 col-sm-11 col-xs-11 name">
+                        <li class="nav-item"><a class="nav-link" href="#portfolios">Boonyarit Homruen</a></li>
+                        <li class="nav-item developer navbar-right"><a class="nav-link developer" href="#portfolios">Faculty of Industial Education and Technology </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--end Navigation bar -->
+
+    <!--start of header-->
+    <header class="profile">
+        <div class="container">
+            <div class="well profile-bg">
+
+                <img class="img-responsive img-circle profileimage" src="img/profile.jpg" onerror="this.src='img/profile2.jpg'" alt="profile picture" title="Ankur Dauneria">
+
+                <hr>
+
+                <div class="interests">
+                    <p>Contact us on Social Media</p>
+                </div>
+
+                <hr>
+
+                <div class="moto">
+                   
+                    <a class="btn btn-social-icon btn-facebook smemail" data-toggle="tooltip" data-placement="bottom" title="Facebook" href="https://www.facebook.com/must.smart">
+                        <span class="fa fa-facebook-square fa-5x" aria-hidden="true"></span>
+                    </a>
+                    
+                    <a class="btn btn-social-icon btn-github smlinkin" data-toggle="tooltip" data-placement="bottom" title="Github" href="https://github.com/Mustted">
+                        <span class="fa fa-github-square fa-5x" aria-hidden="true"></span>
+                    </a>
+                    
+                    <a class="btn btn-social-icon btn-envelop smemail" data-toggle="tooltip" data-placement="bottom" title="Email" href="mailto:57030185@kmitl.ac.th">
+                        <span class="fa fa-envelope fa-5x" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--end of header-->
+
+    <!--start of section-->
+    <section id="featuredWork">
+        <div class="container">
+            <div class="row portfolio-row">
+
+                <!--Project tile 1 -->
+                <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item" id="portfolios">
+                    <div class="well projectWell">
+                        <a class="fa fa-id-card-o fa-6 project" data-toggle="modal" data-tooltip="tooltip" data-placement="bottom" data-target="#myProjectModal" title="Introduction" aria-hidden="true"></a>
+                        <hr>
+                        <div class="portfolio-description">
+                            <p>Introduction</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end Project tile 1-->
+
+                <!--Project Modal-->
+                <div id="myProjectModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Introduction</h4>
+                            </div>
+                            <div class="modal-body">
+                                <ul class="modal-ulist">
+                                    <li class="well ptile projectcustom">
+                                        
+                                            <div class="project-summary">
+                                                <h3>Profile</h3>
+                                                <p>Name : Boonyarit Homruen</p>
+                                                <p class="work-desciption">Birthday: 17 Aug 1995
+                                                    <br>Nickname: Must     
+                                                    <br> Age: 22
+                                                    <br>Thailand.
+                                                </p>
+                                                
+                                            </div>
+                                        
+                                    </li>
+
+                                    <li class="well ptile projectcustom">
+                                        <div class="coding-project">
+                                            <div class="project-summary">
+                                                <hr>
+                                                <h3>Educations</h3>
+                                                    <p>Junior High School : Bansuksamran school 
+                                                    <br>Vocational Certificate:Kamphaeng Phet Technical College
+                                                    <br>Now: King Mongkut's Institute of Technology Ladkrabang.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--end Project Modal-->
+
+                <!--Publication tile 2 -->
+                <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
+                    <div class="well publicationWell">
+                        <a class="fa fa-pencil fa-6 publication" data-toggle="modal" data-tooltip="tooltip" data-target="#myPublicationModal" data-placement="bottom" title="Genius" aria-hidden="true"></a>
+                        <hr>
+                        <div class="portfolio-description">
+                            <p>Genius</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end Publication tile 2-->
+
+                <!-- Publication Modal -->
+                <div id="myPublicationModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Genius</h4>
+                            </div>
+                            <div class="modal-body">
+    
+                                <ul class="modal-ulist">
+                                    <li>
+                                        <p class="well ptile">
+                                            <strong>COMPUTER: </strong> ISE Design Suite, Microsoft Office, Visual Basic, Ulead Video Studio, HTML and Basic PHP
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="well ptile">
+                                            <strong>SPORTS: </strong> Volleyball, Badminton and Table Tenis
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--end Publication Modal-->
+
+                <!--Award tile-->
+                <div class="col-sm-4 col-md-4 col-lg-4 portfolio-item">
+                    <div class="well awardWell">
+                        <a class="fa fa-phone fa-6 award" data-toggle="modal" data-tooltip="tooltip" data-placement="bottom" data-target="#myAwardModal" title="Contact us" aria-hidden="true"></a>
+                        <hr>
+                        <div class="portfolio-description">
+                            <p>Contact us</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Award tile-->
+
+                <!-- Award Modal -->
+                <div id="myAwardModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Contact us</h4>
+                            </div>
+                            <div class="modal-body">
+                                <ul class="modal-ulist">
+                                    <li>
+                                        <p class="well ptile"><span class="fa fa-star fa-1x awd-star"></span> &nbsp; Telephone : 095-427-8678</p>
+                                    </li>
+                                    <li>
+                                        <p class="well ptile"><span class="fa fa-star fa-1x awd-star"></span> &nbsp; E-mail : 57030185@kmitl.ac.th</p>
+                                    </li>
+                                    <li>
+                                        <p class="well ptile"><span class="fa fa-star fa-1x awd-star"></span> &nbsp; Facebook :  /must.smart</p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--end Award Modal-->
+
+            </div>
+        </div>
+    </section>
+    <!--end of section-->
+
+    <!-- Footer  -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="well footerwell">
+                        <div class="footerdetails">
+                            <p class="footer-para">Made with <i class="fa fa-heart" aria-hidden="true"></i>
+
+                            </p>
+                            <p class="footer-para">This project is licensed under the <a href="https://choosealicense.com/licenses/mit/">MIT</a> License
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--end Footer-->
+
+    <!--scroll top button-->
+    <button class="btn btn-primary scroll-top" onclick="scrolltoTopFunction()" id="scroll-id" data-scroll="up" type="button">
+            <i class="fa fa-chevron-up"></i>
+    </button>
+    <!--end scroll top button-->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--Additional Javascript -->
+    <script src="js/portfolio.js"></script>
+
 </body>
 
 </html>
