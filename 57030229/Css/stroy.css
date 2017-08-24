@@ -1,0 +1,137 @@
+html{
+    background-image: url(../Pic/blac.jpg);
+}
+ul{
+    margin-left: 50px;  
+    width: 640px;
+}
+header{
+    
+    height: 30px;
+    width: 100%;
+    margin: auto auto; 
+    font-size: 60px;
+    font-family:monospace;
+    color:#99FF00;
+    text-align: center;
+    text-shadow: 2px 2px red;
+}
+h2{
+    color: lightgray;
+    font-size: 30px;
+    
+}
+li{
+    float:left;
+    font-size: 20px;
+    list-style:none;
+    text-align:left;
+    padding: 15px;
+    text-shadow: 2px 2px red;
+}
+#l4:hover{
+    background: #CCFFCC;
+}
+#l5:hover{
+    background: #CCFF99;
+}
+#l6:hover{
+    background: #CCFF66;
+}
+h3{
+    font-size: 30px;
+}
+#pic1{
+    background-image:url(../Pic/foodH.jpg);
+    height: 200px;
+    width: 150px;
+    margin: auto auto;
+}
+#pic2{
+    background-image:url(../Pic/bf.jpg);
+    height: 200px;
+    width: 200px;
+    margin: auto auto;
+}
+#pic3{
+    background-image:url(../Pic/ex1.jpg);
+    height: 200px;
+    width: 200px;
+    margin: auto auto;
+}
+#pic4{
+    background-image:url(../Pic/ex2.jpg);
+    height: 200px;
+    width: 200px;
+    margin: auto auto;
+}
+#pic5{
+    background-image:url(../Pic/im.jpg);
+    height: 300px;
+    width: 300px;
+    margin: auto auto;
+}
+.cintro{
+    width: 80%;
+    margin: auto auto;
+    color: black;
+   background: white;
+  
+}
+p{
+    font-size: 25px; 
+}
+footer{
+   background: black;
+    color: white;
+    margin: auto auto;
+    width: 80%;
+    font-size: 20px;
+}
+.down1{
+    margin-top: 30px;
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+@media screen and (min-width:1000px ){
+    .down1{
+    margin-top: 30px;
+    height: 50px;
+    width: 50px;
+    margin-left: 10px; 
+}
+main{
+    width: 90%;
+    margin: auto auto;
+    background: black; 
+}
+.cintro{
+    width: 49%;
+    height: 900px;
+    color: black;
+   background: white;
+    margin:10px;
+    margin: auto auto;
+    margin-top: 10px; 
+}
+    .dc{
+    color: fuchsia;
+    width :100%; 
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .link{
+        margin-left: 40%
+    }
+    footer{
+        width:90%;
+    }
+    #sec4{
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    
+    
+}
+

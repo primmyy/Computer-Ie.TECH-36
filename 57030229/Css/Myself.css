@@ -1,0 +1,154 @@
+h2{
+    font-size: 40px;
+}
+ul{
+    margin-left: 50px;  
+    width: 640px;
+}
+li{
+    float:left;
+    font-size: 20px;
+    list-style:none;
+    text-align:left;
+    padding: 15px;
+}
+#l4:hover{
+    background: #CCFFCC;
+}
+#l5:hover{
+    background: #CCFF99;
+}
+#l6:hover{
+    background: #CCFF66;
+}
+body{
+    padding: 8px 8px 8px 8px;
+    background-image: url(../Pic/blac.jpg);
+}
+header{
+    font-size: 70px;
+    font-family:monospace;
+    font-weight:bolder;
+    text-decoration:underline;
+    color:chartreuse;
+    text-shadow: 3px 3px yellow; /*ทำให้ตัวอักษรมีเงา*/
+}
+#intro{
+    background-image: url(../Pic/bank1.jpg);
+    height: 200px;
+    width: 150px;
+    margin: auto auto;
+}
+main{
+    max-height:100% ;
+    width: 90%;
+    background:#66FF66;
+    margin: auto auto;
+}
+p{max-width: 100%;
+   font-family:sans-serif;
+   font-size: 30px;
+    color:#3300FF;
+    margin-left: 10px;
+}
+.dc{
+     max-height:100% ;
+    width: 90%;
+    background:#CCFF00;
+    margin: auto auto;
+}
+/*ใส่hoverเพื่อให้เวลาเอาเมาส์ไปอยู่ตรงรูปรูปจะเปลี่ยน*/
+#hobby{
+    background:url(../Pic/hobby1.jpg);
+    height: 200px;
+    width: 150px;
+    margin: auto auto ;
+    display: block;
+    text-indent: -99999px;
+}
+#hobby:hover {
+    background-image : url(../Pic/Guitar.jpg); /* ที่อยู่รูปภาพที่2 */
+    height: 200px;
+    width: 150px;
+}
+#food{
+    background:url(../Pic/food1.jpg);
+    height: 200px;
+    width: 150px;
+    margin: auto auto ;
+    display: block;
+    text-indent: -99999px;
+}
+#food:hover {
+    background-image : url(../Pic/food2.jpg); /* ที่อยู่รูปภาพที่2 */
+    height: 200px;
+    width: 150px;
+}
+#color1{
+    background:url(../Pic/Orange.png);
+    height: 200px;
+    width: 150px;
+    margin: auto auto ;
+    display: block;
+    text-indent: -99999px;
+}
+#color1:hover {
+    background-image : url(../Pic/green.png); /* ที่อยู่รูปภาพที่2 */
+    height: 200px;
+    width: 150px;
+}
+.down1{
+   height: 60px;
+   width: 60px;
+    float: left;
+    margin: 10px;
+}
+#soc{
+    float: left;
+    width: 100%;
+    margin-left: 33%;
+}
+#dw{
+    margin: 10px;
+}
+footer{
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    color:black;
+}
+top{
+    margin-top: 10px;
+}
+#footmain{
+    width:18%;
+    margin-left: 40%;
+   background:pink;
+    box-shadow:3px 3px black ;/*ใส่เงาให้กับภาพ */
+}
+@media screen and (min-width:1000px ){
+    main{
+    max-height:100% ;
+    background:#33CCFF;
+   flex-wrap: wrap;
+    display: flex;
+}
+ p{max-width: 100%;
+   font-family:monospace;
+   font-size: 40px;
+    color:#3300FF;
+    margin-left: 10px;
+}
+.dc{
+        width: 48%;
+    height: 700px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+   h2{
+        width: 100%;
+    }
+    #soc{
+    margin-left: 40%;
+}
+    
+}
