@@ -1,0 +1,146 @@
+/*********ส่วนที่กำหนด ช่วงห่างของกล่อง ซ้าย ขวา และข้างบน กำหนดสี และความสูงและกว้าง ในส่วนของbody**********/
+body
+{
+    
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color:  #ffff99;
+    height: 100%;/**Responsive design**/
+    width:100%;/**Responsive design**/
+    font-family:sans-serif;
+}
+/**********กำหนดลักษณะต่างๆในส่วน header**************/
+#hh
+{
+    margin-top: 50px;
+    height: 100px;
+    font-size: 50px;
+    margin-bottom: 0px;
+    padding-left: 30px;
+    padding-top: 50px;
+    font-family: 'Monoton', cursive;
+    font-family: 'Limelight', cursive;
+    color:black;
+   
+}
+/************กำหนดลักษณะต่างๆในส่วนของรูปภาพที่เรียกใช้ id b5 ในที่นี้คือรูปภาพด้่นบนในส่วน main ที่เขียนว่า cactus*************/
+#b5
+{
+    width:100%;/**Responsive design**/
+    height:170px;
+
+}
+/***************กำหนดลักษณะต่างๆในส่วนของ menu *************/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #331a00;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover 
+{
+    background-color: #111;
+}
+
+.menu
+{
+    text-decoration:none;
+    color: white;
+}
+.c1
+{
+    font-size: 20px;
+    padding-left: 20px; 
+    padding-right: 20px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    
+}
+image
+{
+    padding-left:10%;
+    padding-right:0px;
+    width: 200px;
+    height: 200px; 
+}
+
+img
+{
+    max-height: 200px;
+    height: 20%;/**Responsive design**/
+    width: 20%;/**Responsive design**/
+    float: left;
+    
+    
+}
+/******************กำหนดลักษณะสิ่งต่างๆให้เหมาะสมเมื่ออยู่ที่หน้าจอขนาด 0px-300 px*****************//**Responsive design**/
+@media screen and (min-width:0px) and (max-width:300px)
+{
+/**********กำหนดส่วน header**************/
+#hh
+{
+    margin-top: 20px;
+    height: 100px;
+    font-size: 40px;
+    margin-bottom: 0px;
+    padding-left: 30px;
+    padding-top: 50px;
+    font-family: 'Monoton', cursive;
+    font-family: 'Limelight', cursive;
+    color:black;
+   
+} 
+    #c1
+{
+    font-size: 16px;
+    padding-left: 1px; 
+    padding-right: 20px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    min-width:     
+}
+    /**************กำหนดลักษณะต่างๆในส่วนของตารางทั้งหมด ***********/
+}
+ #joy
+    {
+        margin-left:5%;/**Responsive design**/
+        margin-right:5%;/**Responsive design**/
+        min-width: 200px;
+    } 
+    /*************กำหนดลักษณะต่างๆในส่วนของ พารากราฟที่เรียกใช้ class pp************/
+.pp
+{
+    padding-right: 15px;
+    min-width: 200px;
+    margin-left: 10%;/**Responsive design**/
+    margin-right: 10%;/**Responsive design**/
+    min-height: 200px;
+}
+    /*************กำหนดลักษณะต่างๆในส่วนของ พารากราฟที่เรียกใช้ class pp************/
+table
+{
+    min-width: 240px;
+}
+/************กำหนดลักษณะต่างๆในส่วนของ footer**************/
+footer
+{
+    text-align: center;
+    background-color: #331a00;  
+    padding-top: 5px;
+    height:25px;
+    color: aliceblue;
+}
+

@@ -1,0 +1,116 @@
+/*********ส่วนที่กำหนด ช่วงห่างของกล่อง ซ้าย ขวา และข้างบน กำหนดสี และความสูงและกว้าง ในส่วนของbody**********/
+body
+{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    background-color:  #ffff99;
+    height: 100%;/**Responsive design**/
+    width:100%;/**Responsive design**/
+    font-family:sans-serif;
+}
+/**********กำหนดลักษณะต่างๆส่วน header *****************/
+#hh
+{
+    margin-top: 50px;
+    height: 100px;
+    font-size: 50px;
+    margin-bottom: 0px;
+    padding-left: 30px;
+    padding-top: 50px;
+    font-family: 'Monoton', cursive;
+    font-family: 'Limelight', cursive;
+    color:black;
+   
+}
+/****************กำหนดระยะห่างขอบนอกของกล่องที่ครอบ table ทั้งหมด****************/
+.ct
+{
+    margin-left: 5%;/**Responsive design**/
+    margin-right: 5%;/**Responsive design**/
+    margin-top: 1px;
+    display: flex;   
+}
+/****************กำหนดลักษณะต่างๆขนาดรูปภาพที่เรียกใช้ class นี้************/
+.b5
+{   display : flex;
+    margin: auto;
+    width:40%;/**Responsive design**/
+    /*height:10%;/**Responsive design**/
+    /*max-width: 400px;
+    max-height: 400px;*/
+}
+/******************กำหนดลักษณะต่างๆให้เหมาะสมเมื่ออยู่ที่หน้าจอขนาด 0px-400px*****************//**Responsive design**/
+@media screen and (min-width: 0px) and (max-width:400px)
+{
+#hh
+{
+    margin-top: 20px;
+    height: 100px;
+    font-size: 40px;
+    margin-bottom: 0px;
+    padding-left: 30px;
+    padding-top: 50px;
+    font-family: 'Monoton', cursive;
+    font-family: 'Limelight', cursive;
+    color:black;
+   
+}
+/******************กำหนดลักษณะต่างๆในส่วนของmenu***********/
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #331a00;
+    margin-bottom: 5px;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover 
+{
+    background-color: #111;
+}
+.menu
+{
+    text-decoration:none;
+    color: white;
+}
+.c1
+{
+    font-size: 18px;
+    padding-left:5%; /**Responsive design**/
+    padding-right: 5%;/**Responsive design**/
+    padding-bottom: 25px;
+    padding-top: 25px; 
+    background-color: #b37700;
+}
+/************ กำหนดลักษณะต่างๆขนาดของคำในแทรค a********/
+#cat
+{
+    font-size: 50px;
+    font-family: fantasy;
+    background-color: black;
+    color: white;
+    
+}
+/************กำหนดลักษณะต่างๆในส่วนของ footer**************/
+footer
+{
+    text-align: center;
+    background-color: #331a00;  
+    padding-top: 5px;
+    height:25px;
+    color: aliceblue;
+}
