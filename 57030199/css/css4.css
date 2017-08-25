@@ -1,0 +1,108 @@
+/************************Size BODY***************************/
+body
+{
+    margin-left: 0px;
+    background-color:burlywood;
+    width: 100%;/******Responsive**********/
+    height: 100%;/******Responsive**********/
+}
+
+/**************กำหนดขนาดตัวหนังสือ,ชนิดfont,สี ของheader****************/
+#p1{
+
+    font-size:40px;
+    color: #FFFFFF;
+    font-family:fantasy;
+}
+
+/***************************MENU BAR***************************/
+ul 
+{
+    width: 100%;/******Responsive**********/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #330000;
+}
+li {
+    float: left;
+}
+li a 
+{
+    font-size: 22px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/**************กำหนดขนาดต่างๆในส่วนของmain*************/
+main
+{   margin-left: 5%;/******Responsive**********/
+    margin-right: 5%;/******Responsive**********/
+    width: 90%;/******Responsive**********/
+ 
+}
+/************กำหนดขนาดfontของพารากาฟที่เรียกใช้idนี้*******************/
+#h1{
+    font-size: 25px;
+}
+
+/************กำหนดขนาดต่างๆของพารากาฟที่่เรียกใช้classนี้********************/
+.b-text
+{   
+ 
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-height: 310px;
+}
+/****************กำหนดขนาดต่างๆของ<img>ที่เรียกใช้classนี้*****************/
+.img
+{   
+    float: left;
+    width: 40%;/******Responsive**********/
+    height: 10%;/******Responsive**********/
+    max-width: 400px; 
+    margin-right: 20px;
+}
+/****************กำหนดขนาดของตาราง**************/
+table
+{  margin-top: 50px;
+    width: 250px;
+}
+/****************กำหนดขนาดต่างๆของช่องเก็บข้อมูลในตาราง**************/
+td{
+  width: 100px;
+  padding: 10px;
+      
+}
+/***********กำหนดขนาดต่างๆลักาณะต่างของ<td>ที่เรียกใช้class="ht"***********/
+.ht
+{
+    font-size: 20px;
+    background-color: peru;
+}
+
+
+/*******************footer******************/
+footer
+{
+    text-align: center;
+    background-color: #662200;  
+    padding-top: 5px;
+    height:25px;
+}
+
+/*******กำหนดขนาดต่างๆ เพื่อให้ เหมาะกับหน้าจอขนาด(0-300)**********//******Responsive**********/
+@media screen and (min-width:0px) and (max-width:300px)
+{
+.ht
+{
+    font-size: 16px;
+    background-color: peru;
+}
+}
+
+
