@@ -1,0 +1,101 @@
+/* การใส่สไตล์ต่างๆให้กับส่วนของ body */
+body{
+    background: #A0522D;
+    display: block;
+    font-family: monospace;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    color: #990000;
+ 
+        
+}
+
+/* การใส่สไตล์ต่างๆให้กับส่วนของ content */
+#cvmain{
+    background-color: #F5DEB3;
+    margin-top: -5px;
+    display: block;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: 3px solid #990000;
+     
+}
+
+/* การใส่สไตล์ต่างๆให้กับส่วนของ content */
+header{
+    color: #990000;
+    font-family : fantasy;
+    font-size: 30px;
+    background-color: #F5DEB3;
+    border-radius: 10px;
+    border: 3px solid #990000;
+}
+
+/* การใส่สไตล์ต่างๆให้กับส่วนของ content CV OF การแสดงผล display เป็นชนิด block ขนาดฟ้อน 15px การแสดงข้อความให้อยู่ตรงกลาง */
+.cv5{
+    display: block;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* การใส่สไตล์ต่างๆให้กับส่วนของ content Chatree Promprasert การแสดงผล display เป็นชนิด block ขนาดฟ้อน 15px การแสดงข้อความให้อยู่ตรงกลาง*/
+.cv6{
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    
+}
+
+/* การใส่สไตล์ให้กับส่วนของ img ใน flexbox ชื่อ cv8 */
+/* กำหนดการแสดงผลให้เป็นแบบตาราง */
+.cv8{
+    display:table;
+    
+    
+}
+
+/*----------------------การกำหนดสไตล์ต่างๆของ menu*/
+/* กำหนดสีอักษรภายในกรอบเมนู */
+a{
+    color: white;    
+}
+
+/* ใส่ชนิดของ text-decoration ให้เป็นชนิด none(ไม่มีจุดตรงหน้าส่วนของเมนู)*/
+a:link{
+    text-decoration:none; 
+}
+
+/* กำหนดขนาดของอักษรคือ 15px การแสดงปลของแถบเมนูแต่ละตัวให้อยู่ใรบรรทัดเดียวกันและกำหนดให้ระยะห่างภายในของกรอบเมนูห่าง 10px */
+li{
+    font-size: 15px;
+    display: inline;
+    padding: 10px;
+}
+
+/* กำหนดสไตล์ของแท็กเมนู ให้ระยะห่างระหว่างขอบของวัตถุที่ทั้ง 4 ด้านคือบน ล่าง ซ้าย ขวา ห่างกัน10px ทุกด้าน และกำหนดระยะห่างระหว่างขอบของวัตถุด้านใน กับข้อความที่อยู่ในกรอบเป็น 0px และให้ตำแหน่งข้อความอยู่ตรงกลาง */
+ul {
+    margin: 10,10,10,10;
+    padding: 0px;
+    text-align: center;
+}
+
+/*----------------------menu*/
+
+/* กำหนดสไตล์ของรูปภาพให้ขอบมีความโค้ง 5px */
+img{
+   border-radius: 5px;
+    
+}
+
+/* กำหนดสไตล์ของfooterให้ขอบมีความโค้ง 5px ตำแหน่งข้อความอยู่ตรงกลาง กำหนดสีตัวอักษรคือ #990000 สีพื้นหลังคือ #F5DEB3 สีขอบของ footer คือ #990000 มีความหนา 3px*/
+footer{
+    text-align: center;
+    background-color: #F5DEB3;
+    color: #990000;
+    border-radius: 5px;
+    border: 3px solid #990000;
+}
+
+
