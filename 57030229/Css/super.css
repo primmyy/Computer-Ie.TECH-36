@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    font: normal 14px/1.428571428571429 "tahoma";
+    margin: 0;
+    padding: 0px 3px 0px 0px;
+  text-align:center;"
+    
+}
+ul{
+    background-color: red;
+    margin: 0;
+    border-bottom:20px solid  red;
+    background-color: gainsboro;
+}
+img{
+    max-width: 100%
+}
+li{
+float:left;
+padding: 0 8px;
+list-style:none;  
+}
+#under{
+    background-color:aquamarine
+}
+#ta1{
+    max-width: 100px;
+}
+#ta2{
+    max-width: 100px;
+}
+#ta3{
+    max-width: 100px;
+}
+#ta4{
+    max-width: 100px;
+}
+#ta5{
+    max-width: 100px;
+}
+@media screen and (min-width: 950px){
+    body{
+    margin: 0;
+    max-width: 100%;
+}
+li{width: auto;
+    color: deepskyblue;
+    list-style:none;
+    float:left;
+    font-size: 20px;
+    max-width: 100%;
+    margin-top: 10px;
+    max-width: 100%;
+    margin-top: 5px;
+}
+#l1{
+    margin-left: 60px;
+    margin-right: 60px;
+    
+}
+#l2{
+    margin-left: 60px;
+    margin-right: 60px;
+   
+}
+#l3{
+    margin-left: 60px;
+    margin-right: 60px;
+   
+}
+#l4{
+    margin-left: 60px;
+    margin-right: 60px;
+  
+}
+#l5{
+    margin-left: 60px;
+    margin-right: 60px;
+    
+}
+ul{
+    border-bottom:50px solid gainsboro;
+    background-color: gainsboro;
+    margin: 0;
+    
+}
+img{
+    width: 108px;
+    height: 198px;
+    margin-left: 60px;
+    margin-top: 20px;
+   
+}
+#head{
+    font-size: 30px;
+     margin-left: 10px;
+    
+    
+}
+#kk{
+    background-color: aqua;
+     margin-left: 50px;
+  
+}
+#post{
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+#follow{
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+#following{
+     margin-left: 50px;
+    margin-right: 50px;
+  
+}
+#introduce{
+    float: left;
+   
+}
+#qwq{
+        background-color: aquamarine;
+        
+ }
+#under{
+        background-color: aquamarine;
+        
+ }
+    #ta1{
+    max-width: 100%;
+    width: 200px;
+    height: 200px;
+}
+#ta2{
+    max-width: 100%;
+     width: 200px;
+    height: 200px;
+}
+#ta3{
+    max-width: 100%;
+     width: 200px;
+    height: 200px;
+}
+
+}
