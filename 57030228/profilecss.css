@@ -1,0 +1,136 @@
+/*------------เป็นส่วนที่ใช้ตกแต่ง javascript นาฬิกา ---------------------------------------------*/
+.styling{
+background-color:black;
+color:lime;
+font: bold 16px MS Sans Serif;
+padding: 3px;
+}
+/*-------------------ส่วนที่ใช้ในการปรับขนาดฟอน ตกแต่งสี และปรับ flexbox ของฟอน-----------------------------------------*/
+p{
+    color:cadetblue;
+}
+p1{
+    display: block;
+    margin: auto;
+    text-align: center;
+    color:cadetblue;
+    font-size: 28px;
+}
+p2{
+    display: block;
+    margin: auto;
+    text-align: center;
+    color:cadetblue;
+    font-size: 22px;
+}
+a{
+    text-align: center;
+    color:cadetblue;
+    font-size: 22px;
+    text-decoration: none;
+}
+td{
+    color:cadetblue;
+    font-size: 18px;  
+}
+p3{
+    display: block;
+    margin: auto;
+    text-align: center;
+    color:black;
+}
+
+
+/*----------------------ส่วนตกแต่งของ menu เป็นส่วนที่ตกแต่งโดย link,visited จะเป็นการระบุให้รู้ว่าเมื่อไม่ได้ไปแตะที่ menu สีจะเป็นสีขาว และเมื่อไปแะจะเป็นสี สีส้มเข้ม 
+-----------------------------------------------------------*/
+a:link {
+	background-color: inherit; 	
+	text-decoration: none;
+	color: white;
+	}
+a:visited { 
+	background-color: inherit;
+	color: white; 
+	text-decoration: none;
+	}
+a:active { 
+	color: #ff5a00; 
+	background-color: inherit;
+	text-decoration: none;
+	}
+a:hover { 
+	color: #ff6c00; 
+	background-color: inherit;
+	text-decoration: none;
+	}
+/*--------------------เป็นส่วนตกแต่งที่ทำให้ เส้นใต้หายไป และ ทำให้ส่วนเมนูอยู่ในไลน์เดียวกัน---------------------------------------------------------------------------------------------------------------------------------*/
+
+body { font-family: sans-serif; }
+
+#main-menu .nav-bar { list-style:none; margin-top: 20px; }
+#main-menu .nav-bar { list-style:none; margin-left: -50px;}
+#main-menu .nav-bar li { display:inline; padding:0 10px; }
+
+#main-menu1 .nav-bar { list-style:none; margin-top: 20px; }
+#main-menu1 .nav-bar { list-style:none; margin-left: -50px;}
+#main-menu1 .nav-bar li { display:inline; padding:0 10px; }
+
+/*-------------------------เป็นส่วนที่ใช้ในการตกแต่งและปรับขนาด flexbox---------------------------------------------------------------------------------------------------------------------------*/
+#flexbox
+{
+    border-radius: 2em;
+    background-color: white;
+    display: block;
+    width: 40%;
+    margin: auto;
+    border: 16px solid cadetblue;
+}
+#flex2
+{
+    border-radius: 2em;
+    background-color: white;
+    display: block;
+    width: 70%;
+    margin: auto;
+    border: 16px solid cadetblue;
+}
+
+#main-menu{
+    display: block;
+    border-radius: 2em;
+    width: 65%;
+    height: auto;
+    margin: auto;
+    border: 16px solid white;
+}
+.boxx2{
+    margin: auto;
+    display: block;
+    width: 25%;
+    height: auto;
+    box-shadow: 5px 5px 25px 1px;
+    border-radius: 50%;
+}
+.me{
+    border-radius: 50%;
+}
+/*-------------------พื้นหลังของเว็ป-------------------------------------------------------------------------------------------------------------------------------------*/
+#HHH{
+    background: linear-gradient(to right, darkcyan , beige);
+    width: 100%;
+    height: 100%; 
+}
+
+/*-----------------------เป็น ressponsive ที่ใช้ในการกำหนดค่าของฟอนเมื่อความกว้างหน้าจอเท่ากับ 600px-------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+    a {font-size: 15px; }
+    p,p1{font-size: 16px;}
+    p2,td{font-size: 14px;}
+    .img2{
+        width: 50%;
+        height: 50%;
+    }
+    .img1{
+        width: 7%;
+    }
+}
