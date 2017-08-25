@@ -1,0 +1,107 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href= "profilecss.css" media="all">
+   
+    </head>
+        <header>
+            
+            <!--ส่วน h1 มี flexbox ครอบ โดยที่ใน h1 มี p เพื่อใช้ในการกำหนดresponsive ของ Text--> 
+            
+                <h1 face="Courier New" id="flexbox"><p align="center" >My Profile</p></h1>
+        </header>
+    
+    <!--ส่วนของลิงค์ไปเว็ปหน้าอื่นๆระบุ align="center" เพื่อให้ menu อยู่ตรงกลางของเว็ป id="main-menu" มีไว้เพื่อสร้าง flexblock ครอบลิงค์เว็ปและเป็นตัวช่วยในการระบุค่าต่างๆของเว็ป ของ ul และ li-->
+    
+    
+    <!--id=HHH" ใช้สร้างพื้นหลังของเว็ป-->
+    
+        <body id="HHH">
+            
+            <!--หลักๆในส่วนนี้คือ ทำ flexbox คลุม flexbox flex2 สร้างมาเพื่อคลุม section ที่เป็นส่วนเนื้อหา-->
+            
+             <main id="flex2">
+                 <div class="box1">
+                   <section >
+                        <h2 align="center"><p>Profile</p></h2>
+
+                       <!--เป็นส่วนรูปโปรไฟล์ใส่โดยใช้ flexbox คลุมไว-->
+                       
+                <div class="boxx2">
+                    <div>
+                        <img class="me" src="https://scontent.fbkk2-2.fna.fbcdn.net/v/t1.0-9/18268614_1837310796589150_2167281002551433564_n.jpg?oh=66774f527168fbd669603aa7a101b348&oe=59B78A30" width="100%">
+                    </div>           
+                </div><br>
+
+                       <!--เป็นส่วนของการใส่ table และ รูปภาพ icon ใช้ในการใส่รหัส-->
+                       
+                       <table align="center">
+                        <tbody>
+                        <tr>
+                            <th><img class="img2" src="http://icons.iconarchive.com/icons/crountch/one-piece-jolly-roger/24/Luffys-flag-2-icon.png"></th>
+                            <td>นายศุภภัทร งามพันธ์ุดิศร [เอิร์ท] </td>
+						</tr>
+					   
+                        <tr>
+                            <th><img class="img2" src="http://icons.iconarchive.com/icons/crountch/one-piece-jolly-roger/24/Zoro-icon.png"></th>
+                            <td>090 982 2224</td>
+                        </tr>
+                        <tr>
+                            <th><img class="img2" src="http://icons.iconarchive.com/icons/crountch/one-piece-jolly-roger/24/Nami-icon.png"></th>
+                            <td>24 กันยายน 2539</td>
+                        </tr>
+					     <tr>
+                            <th><img class="img2" src="http://icons.iconarchive.com/icons/crountch/one-piece-jolly-roger/24/Ussop-icon.png"></th>
+                            <td>เรียนอยู่ที่สถาบันเทคโนโลยีเจ้าคุณทหาร ลาดกระบัง</td>
+                        </tr>
+                        <tr>
+                            <th><img class="img2" src="http://icons.iconarchive.com/icons/crountch/one-piece-jolly-roger/24/Sanji-icon.png"></th>
+                            <td>ที่พัก ซอยเกกีงาม1 </td>
+                        </tr>
+					    <tr>
+                            <th></th>
+                            <td>หอพักป้าสนอง</td>
+					    
+                        </tr>
+					    <tr>
+                            <th><img class="img2"  src="http://icons.iconarchive.com/icons/crountch/one-piece-jolly-roger/24/Chopper-icon.png"></th>
+                            <td>57030228@kmitl.ac.th</td>
+                        </tr>
+                        </tbody></table><br>
+                       
+                   </section>
+                 </div>
+             </main><br>
+
+        </body>
+    
+    <!--ส่วนของลิงค์จาวาสคลิป มี ฟังค์ชั่นของนาฬิกา ปฏิทิน และการทำให้รูปขยาย-->
+                
+<center><span id="digitalclock" class="styling"></span>
+
+    <script src="javascript1.js"></script></center>
+
+<center><br><script src="javascript.js"></script></center>
+    
+            <script src="profilejs.js"></script>
+    
+    <!--ส่วนของฟุตเตอร์ ระบุชื่อแฝงของผู้ทำเว็ป และ ลิงค์เว็ปไอจีกับ-->
+           
+                <footer>
+                <hr>
+                <p2><b>Posted by: มิสเตอร์ เอิร์ท</b></p2>
+                <nav align="center" id="main-menu1">
+                        <ul class="nav-bar">
+                            <li><a href="https://www.instagram.com/imsupere/">
+                                <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="img1" src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Instagram-48.png">
+                            </a></li>
+                            <li><a href="https://www.facebook.com/SNEarth">
+                                <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="img1" src="https://cdn2.iconfinder.com/data/icons/social-icon-3/512/social_style_3_facebook-48.png">
+                            </a></li> 
+                        </ul>
+                </nav>
+            </footer>
+    
+</html>
