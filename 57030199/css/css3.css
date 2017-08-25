@@ -1,0 +1,120 @@
+/************************Size BODY***************************/
+body
+{
+    margin-left: 0px;
+    background-color:burlywood;
+    width: 100%;/****Responsive desig*****/  
+    height: 100%;/****Responsive desig*****/  
+}
+
+/**************กำหนดขนาดตัวหนังสือ,ชนิดfont,สี ของheader****************/
+#p1{
+
+    font-size:40px;
+    color: #FFFFFF;
+    font-family:fantasy;
+}
+
+/***************************MENU BAR***************************/
+ul 
+{
+    width: 100%;/****Responsive desig*****/  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #330000;
+}
+li {
+    float: left;
+}
+li a 
+{
+    font-size: 22px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/******************กำหนดขนาดต่างๆของพารากาฟที่เรียกใช้ id="c4"********************/
+#c4
+{
+    background-color: ;
+    float:none;
+    width: 80%;/****Responsive desig*****/  
+    color: black;
+    padding: 10px;
+    margin-left: 5%;/****Responsive desig*****/  
+    margin-right: 5%;/****Responsive desig*****/  
+}
+
+
+
+/********กำหนดขนาดต่างๆของ<section></section>ที่เรียกใช้ class="flex-item-section"************/
+.flex-item-section
+{
+    height: 100%;/****Responsive desig*****/  
+    width: 100%;/****Responsive desig*****/  
+}
+/********กำหนดขนาดต่างๆของรูป***********/
+.im
+    {   max-width: 500px;
+        width:50%;/****Responsive desig*****/  
+    }
+/********กำหนดขนาดของ<a></a>ที่เรียกใช้class="float"*************/
+a.float
+{
+    padding: 10px;
+    float: right;
+    width: 46%;/****Responsive desig*****/
+    border-radius: 10px;
+    border: 10px solid #604020;
+    margin-left:px;
+    margin-top: 2%;/****Responsive desig*****/  
+    margin-right:2%;/****Responsive desig*****/  
+    background-color:#996633;
+    min-width: 230px;
+     margin-bottom: 15px; 
+    
+}
+
+/*******************footer******************/
+footer
+{
+    text-align: center;
+    background-color: #662200;  
+    padding-top: 5px;
+    height:25px;
+}
+
+/*******กำหนดขนาดต่างๆ เพื่อให้ เหมาะกับหน้าจอขนาด(0-1200)**********//******Responsive**********/
+@media screen and (min-width:0px) and (max-width:1200px)
+{
+   
+a.float
+    {
+        float: inherit;
+        display: block;
+        margin:  0 auto;
+       
+    }
+
+.im
+    { 
+       margin-left: 25%;/****Responsive desig*****/  
+        width:50%;/****Responsive desig*****/  
+    }
+
+}
+/*******กำหนดขนาดต่างๆ เพื่อให้ เหมาะกับหน้าจอขนาด(1201ขึ้นไป)**********//******Responsive**********/
+@media screen and (min-width:1201px)
+{
+.im
+    { 
+      margin-left: 5%;/****Responsive desig*****/  
+        width:50%;/****Responsive desig*****/  
+    }
+
+}
+

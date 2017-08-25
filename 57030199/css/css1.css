@@ -1,0 +1,121 @@
+/************************Size BODY***************************/
+body
+{
+    margin-left: 0px;
+    background-color:burlywood;
+    width: 100%;/******Responsive**********/
+    height: 100%;/******Responsive**********/
+}
+/**************กำหนดขนาดตัวหนังสือ,ชนิดfont,สี ของheader****************/
+#p1
+{
+    font-size:40px;
+    color: #FFFFFF;
+    font-family:fantasy;
+}
+
+/***************************MENU BAR***************************/
+ul 
+{
+    width: 100%;/******Responsive**********/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #330000;
+}
+li {
+    float: left;
+}
+li a 
+{
+    font-size: 25px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*********************** กำหนดขนาดของรูป**********************/
+#im 
+{   
+    width:60%;/******Responsive**********/
+    height:10;
+}
+
+/****************กำหนดขนาดต่างๆของ<ma></ma>กล่องนอกสุดที่เรียกใช้id นี้***************/
+#flex-container
+{
+    display: flex;
+    height: 100%;/****Responsive desig*****/
+    width : 100%;/****Responsive desig*****/
+    padding-left: 2%/******Responsive**********/
+}
+/*******************กำหนดขนาด<section>**************************/
+.flex-item-section
+{
+    height: 100%;/****Responsive desig*****/  
+    width: 100%;/******Responsive**********/
+}
+
+/*******กำหนดขนาดต่างๆในแท๊ก<p>ที่เรียกใช้ class=float เพื่อให้ เหมาะกับหน้าจอขนาด(0px-599px)**********//******Responsive**********/
+@media screen and (min-width:0px) and (max-width:599px)
+{
+     p.float
+    {   
+    
+        float: left;
+        width: 85%;/****Responsive desig*****/
+        height: 125px;
+        border-radius: 10px;
+        border: 10px solid #604020;
+        padding-left: 10px;
+        padding-right:10px;
+        font-size: 16px;
+    }
+}
+
+/*******กำหนดขนาดและลักษณธต่างๆในแท๊ก<p>ที่เรียกใช้ class=float เพื่อให้ เหมาะกับหน้าจอขนาด(600px-1199px)**********//******Responsive**********/
+@media screen and (min-width:600px) and (max-width:1199px)
+{
+    p.float
+    {   
+      
+        float: left;
+        width: 40%;/****Responsive desig*****/
+        height: 125px;
+        border-radius: 10px;
+        border: 10px solid #604020;
+        margin-left:18px;
+        padding-left: 10px;
+        padding-right:10px;
+        font-size: 16px;
+    }
+    
+}
+
+/******* กำหนดขนาดและลักษณะต่างๆในแท๊ก<p>ที่เรียกใช้ class=float เพื่อให้ เหมาะกับหน้าจอขนาด(1200px)ขึ้นไป **********//******Responsive**********/
+@media screen and (min-width:1200px)
+{
+    p.float
+    {   
+        float: left;
+        width: 20%;/****Responsive desig*****/
+        height: 125px;
+        border-radius: 10px;
+        border: 10px solid #604020;
+        margin-left:18px;
+        padding-left: 10px;
+        padding-right:10px;
+        font-size: 16px;
+    }
+}
+
+/**************************footer******************************/
+footer
+{
+    text-align: center;
+    background-color: #662200;  
+    padding-top: 5px;
+    height:25px;
+}

@@ -1,0 +1,150 @@
+/************************Size BODY***************************/
+body
+{
+    margin-left: 0px;
+    background-color:burlywood;
+    width: 100%;/****Responsive desig*****/
+    height: 100%;/****Responsive desig*****/
+}
+
+/**************กำหนดขนาดตัวหนังสือ,ชนิดfont,สี ของheader****************/
+#p1{
+
+    font-size:40px;
+    color: #FFFFFF;
+    font-family:fantasy;
+}
+
+/***************************MENU BAR***************************/
+ul 
+{
+    width: 100%;/****Responsive desig*****/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #330000;
+}
+li {
+    float: left;
+}
+li a 
+{
+    font-size: 22px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/****************กำหนดขนาด<ma></ma>**ที่เรียกใช้ class นี้*************/
+.flex-container
+{
+    
+    display: flex;
+    height: 100%;/****Responsive desig*****/
+    width: 100%;/****Responsive desig*****/
+    background-color: burlywood;
+}
+
+/*******************กำหนดขนาด<section1></section>**ที่เรียกใช้ class นี้************************/
+.flex-item-section1
+{  
+    width: 20%;/****Responsive desig*****/
+    height: 100%;/****Responsive desig*****/
+}
+
+/*******************กำหนดขนาดรูปภาพ**************************/
+.img
+{
+ width: 100%;/****Responsive desig*****/
+height: 100%;/****Responsive desig*****/
+}
+/*******************กำหนดขนาด<section2></section2>**ที่เรียกใช้ class นี้**************************/
+.flex-item-section2
+{   width: 80%;/****Responsive desig*****/
+    height: 100%;/****Responsive desig*****/
+}
+
+/**************กำหนดขนาด<div>ที่เรียกใช้id="item-1"******************/
+#item-1
+{   
+    height: 400px;
+    border: 8px solid #604020;
+    background-color: lightblue;
+    border-radius: 20px;
+}
+
+/*******************footer******************/
+footer
+{
+    margin-top:10px;
+    text-align: center;
+    background-color: #662200;  
+    padding-top: 5px;
+    height:25px;
+}
+/**************กำหนดขนาดรูปภาที่เรียกใช้class="im2"*******************/
+.im2
+{
+    width: 100px;
+    height: 100px;
+}
+
+/*******กำหนดขนาดต่างๆ เพื่อให้ เหมาะกับหน้าจอขนาด(1121ขึ้นไป)**********//******Responsive**********/
+@media screen and (min-width:1121px) 
+{
+   
+    #item-1
+    {   
+        width: 80%;/****Responsive desig*****/
+        height: 400px;
+        margin: 1%;/****Responsive desig*****/
+        padding: 40px;
+   
+    }
+
+
+}
+/*******กำหนดขนาดต่างๆ เพื่อให้ เหมาะกับหน้าจอขนาด(608-1120)**********//******Responsive**********/
+@media screen and (min-width:608px) and (max-width:1120px)
+{
+
+    #item-1
+    {   width:85%;/****Responsive desig*****/
+        height: 400px;
+        margin: 1%;/****Responsive desig*****/
+        padding: 10px;
+        
+    }
+
+
+}
+/*******กำหนดขนาดต่างๆ เพื่อให้ เหมาะกับหน้าจอขนาด(301-607)**********//******Responsive**********/
+@media screen and (min-width:301px) and (max-width:607px)
+{
+
+    #item-1
+    {   width:84%;/****Responsive desig*****/
+        height: 470px;
+        margin: 1%;/****Responsive desig*****/
+        padding: 10px;
+        font-size: 15px;
+        
+    }
+    
+}
+/*******กำหนดขนาดต่างๆ เพื่อให้ เหมาะกับหน้าจอขนาด(0-300)**********//******Responsive**********/
+@media screen and (min-width:0px) and (max-width:300px)
+{
+    #item-1
+    {   width:80%;/****Responsive desig*****/
+        height: 400px;
+        font-size: 12px;
+        padding: 10px;
+        margin-top: 10px;
+         
+    }
+
+ }
