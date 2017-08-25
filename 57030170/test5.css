@@ -1,0 +1,161 @@
+﻿body {
+    margin: 0px;
+    background-color: rgb(255, 191, 0);
+}
+
+img#logo {
+    text-align: center;
+    width: 350px;
+}
+
+header {
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+}
+
+a { /*  กำหนดลิ้งให้มีรูปแบบตามที่กำหนด โดยให้เป็นอักษรตัวใหญ่ ขนาดเเละสีตามที่ระบุไว้ */
+    text-transform: uppercase;
+    font-size: 16px;
+    color: rgb(204, 204, 204);
+    text-decoration: none;
+    padding: 0px;
+}
+
+p {
+    padding-left: 10%;
+}
+
+    p#contactP {
+        margin-top: 50px;
+    }
+
+.laall {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+img#img1 {
+    width: 35%;
+}
+
+section#section1 {
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    background-color: white;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: black;
+}
+
+td {
+    padding-left: 10px;
+    padding-bottom: 7px;
+    margin-right: 5px;
+    list-style-type: circle;
+}
+
+footer { /*การกำหนดลักษณะของ footer ให้มีพื้นหลังเป็น#333 กำหนดขนาด กำหนดลักษณะต่างๆตามที่ต้องการ */
+    background-color: #333;
+    width: 98.5%;
+    color: gainsboro;
+    overflow: hidden;
+    opacity: 0.9px;
+    text-align: center;
+    padding-left: 20px;
+}
+/*เมื่อขนาดจอกว้างตั้งเเต่750px ลงมา ให้ซ่อนเมนูยกเว้นอันเเรกคือ home เมื่อมีการกดจะให้แสดงลิงค์ในแนวตั้งแทนแนวนอน และมีการกำหนดรูปแบบขนาดฟ้อน ระยะห่าง ้แต่ละด้านตามที่ได้ออกเเบบไว้ ซึ่งมีหลาย id หลาย classด้วยกัน รวมไปถึงขนาดรูปภาพ */
+@media screen and (max-width: 750px) {
+
+
+    .laall {
+        display: inline-block;
+    }
+
+    p {
+        font-size: 14px;
+        padding-left: 20%;
+    }
+
+        p#contactP {
+            padding-left: 15%;
+        }
+
+        p#contactP {
+            margin-top: 5px;
+        }
+
+    table {
+        font-size: 14px;
+    }
+
+    img#logo {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+
+@media screen and (min-width: 750px) { /*จะมีการใช้งานก้ต่อเมื่อจอขนาดใหญ่กว่า 750 px ก้จะมีรูปแบบที่ต่างจากเดิมเพราะมีการกำหนดรูปแบบในแต่ละ class id tagname ให้ได้ตามที่ต้องการ */
+    .aall {
+        font-size: 24px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    section#section1 {
+        width: 30%;
+        float: left;
+    }
+
+    .laall {
+        display: inline-block;
+    }
+
+    table {
+        width: 65%;
+        text-align: left;
+        background-image: url(ESUS.png);
+        background-size: contain;
+        background-repeat: no-repeat; /* ไม่ให้มีการใช้รูปซ้ำ */
+    }
+
+    th {
+        color: rgb(255, 250, 240);
+        padding-left: 70px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: 26px;
+    }
+
+    td#td1 {
+        padding-top: 20px;
+    }
+
+    td {
+        padding-left: 40px;
+    }
+
+        td#td2 {
+            padding-top: 25px;
+        }
+
+        td#td3 {
+            padding-top: 28px;
+        }
+
+        td#td4 {
+            padding-top: 30px;
+        }
+
+        td#td5 {
+            padding-top: 5px;
+        }
+}
