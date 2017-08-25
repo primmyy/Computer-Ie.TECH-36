@@ -1,0 +1,176 @@
+
+body {
+    background-color:	#da9cf0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: table;
+    top: 0;
+}
+
+/*---------------------------------- ส่วน navbar--------------------------------------------------*/
+
+.nav {
+    height: 40px;
+    background:	#da9cf0;
+    font-size: 18px;  
+    margin-top: 0px;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 5px;
+}
+
+.nav ul li {
+    list-style :none;
+    display: inline;
+   
+}
+
+.nav ul li a {
+    text-decoration: none;    
+    padding: 20px 20px;
+}
+
+.nav ul li a:hover {
+    color: black;
+}
+
+
+a {
+    color: white;
+    font-family: cursive;	
+	
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------ปรับแต่งกล่องเนื้อหาใน body----------*/
+
+.Container{
+    text-align: center;
+    margin: 0 auto;   
+    font-family: cursive;
+    font-size: 38px;
+    color: white;
+}
+
+#div {
+    text-align: center;
+     margin-top: 75px;
+}
+
+.head1 {
+    margin-top: 100px;
+}
+/*-------------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------ส่วนการปรับแต่งปุ่ม----------------------------------- */
+
+.head2 {
+    margin-top: 50px;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 10px 40px;
+    margin: 0px 10px 10px 0px;
+	border-radius: 10px;
+	font-family:  cursive;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;
+    
+}
+ 
+.action-button:hover{
+    color: black;
+}
+    
+.blue
+{
+	background-color: 	#b35f7e;
+	border-bottom: 5px solid #9541a7;
+	text-shadow: 0px -2px #e18b3f;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------- ส่วน Responsive-------------------------------------*/
+
+@media screen and (max-width:768px) {
+    .Container{
+        font-size: 34px;
+    }
+    .action-button {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .Container{
+        font-size: 32px;
+    }
+    .action-button{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:420px){
+    .Container{
+        font-size: 26px;
+    }
+    .action-button{
+        font-size: 18px;
+    }
+    
+}
+
+
+@media screen and (max-width:379px){
+    .Container{
+        font-size: 24px;
+    }
+    .action-button{
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width:327px){
+    .Container{
+        font-size: 22px;
+    }
+    .nav ul li a{
+    display: block;
+    font-size: 14px;
+    
+    }
+}
+
+@media screen and (max-width:290px){
+    .Container{
+        font-size: 20px;
+    }
+    .action-button{
+        font-size: 14px;
+    }
+    
+}
+
+
+@media screen and (max-width:250px){
+    .Container{
+        font-size: 18px;
+    }
+    .action-button{
+        font-size: 12px;
+    }
+    
+}
+
+/*--------------------------------------------------------------------------------------------*/
