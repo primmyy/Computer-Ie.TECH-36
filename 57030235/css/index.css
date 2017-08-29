@@ -1,0 +1,52 @@
+* {box-sizing: border-box}
+/*ตั้งค่าในส่วนของ body*/
+body {
+	font-family: "Lato", sans-serif;
+	border: 2px solid #A4C8F0;
+	
+}
+
+/*ตั้งค่าในส่วนของรูปแบบlinkตัวอักษร*/
+.tabhome li{
+	display: inline;
+	color:  black;;
+	font-size: 18px;
+	margin: 10px;
+}
+a{
+	color: white;
+}
+a:link{
+	text-decoration: none;
+}
+
+.tab{
+   margin-top: 0px;
+   text-align: right;
+   padding-right: 30px;
+   overflow: hidden; 
+   background-color:  #A4C8F0;
+}
+/*กำหนดความสูงของรูปภาพ*/
+img.mySlides {
+	margin: auto;
+	margin-top: 50px;
+    height: 70%;
+}
+/*กำหนดตำแหน่งของรูปภาพ*/
+.content{
+	margin: auto;
+	overflow: hidden;
+}
+p{
+	font-size: 35px;
+	text-align: center;
+}
+/*ตั้งค่าอุปกรณ์เมื่อมีขนาดน้อยกว่า 600px*/
+@media only screen and (max-width: 600px) {
+	.menu{font-size: 13px;}
+    p{font-size: 16px;}
+	img.mySlides {height: 50%;}
+  
+	
+}
