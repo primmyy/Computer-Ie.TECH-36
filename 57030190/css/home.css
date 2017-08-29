@@ -1,0 +1,170 @@
+/*-----------------จัดหน้าระยะขอบความห่าง-----------------*/
+*{margin: 0 ; padding: 0;} 
+/*---------------------------------------------------*/
+
+/*------------------หัวเรื่องกำหนดความกว้าง-----------------*/
+header{
+    color: azure;
+    margin: 10px;
+    margin-bottom: 30px;
+    font-family:cursive;
+    font-size: 20px;
+}
+
+#container{
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*----------------------------------------------------*/
+
+/*-----------------ทำรูปประจำตัวให้เป็นวงรี-----------------*/
+img{
+    border-radius: 50%;
+}
+/*--------------------------------------------------*/
+
+/*-----------------จัดข้อมูลและรูปภาพให้-----------------*/
+#flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-content:center;
+    width:s 800px;
+    margin: 100px 10px;
+    position: fixed;
+    
+}
+
+#nav_menu{
+    margin-top: 30px;
+}
+
+/*-----------------ส่วนที่เป็นรูปประจำตัวและข้อมูล-----------------*/
+#pic{
+    width: 40%;
+    height: 50%;
+    text-align: center;
+}
+
+#data{
+    font-size: 25px;
+    width: 50%;
+    height: 50%;
+    color: aliceblue;
+    margin-left: 10px;
+    margin-top: 60px;
+}
+/*------------------------------------------------------*/
+
+/*-----------------ปรับแต่ง ปุ่ม Button---------------------*/
+#btn_menu{
+    border-radius: 9px;
+    color: snow;
+    font-size: 135%;
+    padding: 10px 20px;
+    border: solid snow 3px ;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family:fantasy;
+}
+#btn_menu:hover{
+    color:#d8eb72;
+    border: solid #d8eb72 3px;
+}
+
+#btn{
+    border-radius: 9px;
+    color: snow;
+    font-size: 70%;
+    padding: 10px 20px;
+    border: solid snow 3px ;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#btn:hover{
+    color:#d8eb72;
+    border: solid #d8eb72 3px;
+}
+
+.btn{
+    text-decoration: none;
+    margin-top: 10px;
+}
+/*-----------------------------------------------------*/
+
+
+/*--------------------------Footer---------------------*/
+#footer{
+    clear: both;
+    color: #171615;
+    text-align: center;
+    font-family: fantasy;
+}
+/*--------------------------------------------*/
+
+
+/*-----------------Make Responsive------------*/
+
+@media screen and (max-width:720px) {
+    #container{
+        width: 100%;
+    }
+    #flex{
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width:480px) {
+    #container{
+        width: 100%;
+    }
+    #flex{
+        width: 100%; 
+    }
+    
+    header{
+    font-size: 15px;
+    }
+    
+    #pic{
+    margin-top: 70px;
+    }
+    
+    #data{
+    font-size: 20px;
+    margin-top: 80px;
+    }
+    
+    @media screen and (max-width:350px) {
+    #container{
+        width: 100%;
+    }
+    #flex{
+        width: 100%; 
+    }
+    
+    header{
+    font-size: 13px;
+    }
+    
+    #pic{
+    margin-top: 70px;
+    }
+    
+    #data{
+    font-size: 15px;
+    margin-top: 80px;
+    }
+        
+    #btn_menu{
+    font-size: 100%;   
+    }
+        
+    #btn{
+    font-size: 50%;
+    }
+}
+/*----------------------------------------------*/
+
+

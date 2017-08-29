@@ -1,0 +1,116 @@
+/*------------จัดรูปแบบหน้าทั้งหน้า ด้วยระยะขอบ----------*/
+*{margin: 0 ; padding: 0;}
+/*-----------------------------------------------*/
+
+/*-------------ส่วนหัวเรื่องและ คอนเทนเนอร์-------------*/
+body{
+    background-color:#E1BEE7;
+}
+
+#header h1{
+    color: #6D4C41;
+    font-family:fantasy;
+    font-size: 50px;
+}
+
+#container{
+    width: 960px;
+    margin: 0 auto;
+    background-color: #EF9A9A;
+}
+
+#header{
+    text-align: center;
+    padding: 5px 0 10px 0px;
+}
+/*------------------------------------------------*/
+
+/*-------------------จัด nav bar -----------------*/
+#nav{
+    background-color: #BDBDBD;
+    padding: 10px 0px 10px 0px;  
+    
+}
+
+#nav ul  {
+    list-style: none;
+    display: inline;
+    
+}
+
+#nav ul li {
+    display: inline;
+    padding: 10px;
+    
+}
+
+
+#nav ul li a{
+    text-decoration: none;
+    color: #FAFAFA;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#nav ul li a:hover{
+    border: 5px solid black;
+    background-color: black;
+}
+/*------------------------------------------------*/
+
+/*-----การจัดข้อมูลรูปภาพและ จัดรูปแบบการแสดงผล----------*/
+#section {
+    display: block;
+    float: left;
+    width: 65%;
+    margin: 5px;
+}
+/*------------------------------------------------*/
+
+#aside{
+    display: block;
+    float: right;
+    width: 30%;
+    margin: 5px;
+    text-align: center;
+}
+
+#footer{
+    clear: both;
+    background-color: bisque;
+    text-align: center;
+    font-family: fantasy;
+}
+
+
+/*--------------Make responsive--------------------*/
+@media screen and (max-width:720px) {
+    #container,#section,#aside,#footer,p {
+        width: 95%;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #container,#section,#aside,#footer,p {
+        width: 95%;
+        margin: 5px;
+        margin-left: 11px;
+    }
+    #nav ul li {
+        display: block;
+        padding: 0 0 0 15px;
+    }
+    #adiv2{
+        display: none;
+    }
+}
+    
+@media screen and (max-width:398px) {
+    #header h1{
+    font-size: 30px;
+    }
+   
+}
+
+/*------------------------------------------------*/
