@@ -1,0 +1,40 @@
+* {box-sizing: border-box}
+/*ตั้งค่าในส่วนของ body*/
+body {
+	font-family: "Lato", sans-serif;
+	border: 2px solid #A4C8F0;
+	
+}
+
+/*ตั้งค่าในส่วนของรูปแบบlinkตัวอักษร*/
+.tabhome li{
+	display: inline;
+	color:  black;;
+	font-size: 18px;
+	margin: 10px;
+}
+/*ตั้งค่าสีตัวอักษรในเมนู*/
+a{
+	color: white;
+}
+a:link{
+	text-decoration: none;
+}
+/*ตั้งค่าในส่วนของ TAB*/
+.tab{
+   margin-top: 0px;
+   text-align: right;
+   padding-right: 30px;
+   overflow: hidden; 
+   background-color:  #A4C8F0;
+}
+
+p{
+	font-size: 35px;
+	text-align: center;
+}
+th,td{
+	font-size: 20px;
+	text-align: left;
+	padding: 8px; 
+}
