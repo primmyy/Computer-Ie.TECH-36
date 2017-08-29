@@ -1,0 +1,187 @@
+/*---จัดรูปแบบหน้า ระยะขอบและความห่าง--*/
+*{margin: 0 ; padding: 0;}
+/*-------------------------------*/
+
+/*-------------------------------ปรับแต่ง header และใส่สีพื้นหลัง Body*/
+#header {
+    background-color: #ffa4c2;
+    font-family: cursive;
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+}
+
+body{
+    background-color: #cc99ff;
+}
+/*-----------------------ปรับแต่ง container และ flexItem---------------------*/
+#container{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fff0f5;
+}
+
+.flexItem {
+    width: 60%;
+    float: left;
+}
+
+
+.picture {
+    text-align: center;
+}
+
+img {
+    margin: 10px;
+}
+
+/*------------------------------------------ปรับแต่ง navbar------------------------*/
+
+.nav {
+    height: 40px;
+    background:	#ffbdd3;
+    font-size: 16px;  
+    margin-top: 0px;
+}
+
+.nav ul {
+    
+    margin: 0;
+    padding: 6px;
+}
+
+.nav ul li {
+    list-style :none;
+    display: inline;
+   
+}
+
+.nav ul li a {
+    text-decoration: none;    
+    padding: 10px 20px;
+}
+
+.nav ul li a:hover {
+    color: black;
+}
+
+
+a {
+    color: white;
+    font-family: cursive;
+}
+
+/*------------------------------------ปรับแต่ง aside------------------------------*/
+
+.aside {
+    width: 40%;
+    float: right;
+    margin-top: 110px;
+    font-family: cursive;
+    background-color: #fff0f5;
+    color: #f6546a;
+	font-size: 20px;
+}
+ 
+/*-------------------------------------ปรับแต่ง footer------------------------*/
+
+#footer{
+    clear: both;
+    background-color: #c6e2ff;
+    text-align: center;
+    color: mediumblue;
+    margin-top: auto;
+    font-family: cursive;
+    font-size: 14px;
+    
+}
+
+#footer a {
+    text-align: center;
+    color: mediumblue;
+    font-family: cursive;
+    font-size: 14px;
+}
+
+/*----------------------------------------ส่วน Responsive-----------------------*/
+
+@media screen and (max-width:768px) {
+    #container, .flexItem , .aside, p {
+    width: 95%;
+    margin:20px;
+    }
+}
+
+@media screen and (max-width:626px) {
+    #container, .flexItem , .aside, p {
+    width: 95%;
+    margin:15px;
+    }
+    #header {
+        font-size: 20px;
+    }
+    .aside {
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width:440px) {
+    #container, .flexItem , .aside, p {
+    width: 95%;
+    margin:15px;
+	margin-left: 10px;
+    }
+    .aside {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:364px) {
+    #container, .flexItem , .aside, p {
+    width: 95%;
+    }
+    .aside {
+        font-size: 14px;
+    }
+	  .nav ul li {
+    display: block;
+    font-size: 18px;
+    }
+    
+    .nav {
+    height: 100%; 
+    margin-top: 0px;
+	}
+}
+
+@media screen and (max-width:349px) {
+    #container, .flexItem , .aside, p {
+    width: 95%;
+    }
+    .aside {
+        font-size: 14px;
+    }
+  
+    #header {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:290px) {
+    #container, .flexItem , .aside, p {
+    width: 95%;
+    margin:8px;
+    }
+    .aside {
+        font-size: 14px;
+    }
+    
+    #footer a{
+        font-size: 12px;
+    }
+    
+    #footer {
+        font-size: 12px;}
+}
+/*--------------------------------------------------------------------------------*/
