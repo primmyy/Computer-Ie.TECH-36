@@ -1,0 +1,119 @@
+/*กำหนดรูปแบบของส่วน Header */
+header{
+    background-color: darkgoldenrod;
+    text-align: center;
+    color: lightgoldenrodyellow;
+    text-decoration: underline;
+    font-size: 30px;
+    width: 100%;
+    font-family: Impact,  sans-serif;
+  
+}
+/* กำหนดรูปแบบแถบเมนูบาร์ทั้งหมด */
+#con-nav{
+
+    width: 100%; /* ให้มีความสามารถในการเป็น responsive */
+    height: 45px;
+    background-color:saddlebrown;
+ 
+}
+li{
+    list-style:none;
+    float: left; /* ให้เริ่มเรียงชิดกันจากทางด้านซ้าย */
+    display: block;/* ให้มีการแสดงผลเป็นบ็อค */
+    font-family: imp,  sans-serif ;
+    font-size: 20px;
+    height: 14px;
+    text-align: center;
+    padding:  16px; /* กำหนดระยะห่างภายในบล็อก */
+ 
+    
+}
+li:hover:not(#active) { /* เมื่อเม้ามาชี้จะทำให้บริเวณนั้นมีพื้นหลังสีดำ */
+    background-color:black;
+}
+.menu{
+    width: 100%;
+    text-decoration: none; 
+    color: lightgoldenrodyellow; 
+    
+}
+/* กำหนดรูปแบบของส่วนชื่อเรื่องในที่นี้คือ Curriculum Vitae*/
+h2{
+    font-family: sans-serif;
+    font-size: 35px;
+    background-color: lightpink;
+    border-radius: 15px;
+    color: brown
+}
+/* กำหนดรูปแบบของส่วนหัวข้อย่อยในที่นี้คือmy hobby*/
+h3{
+    font-family: sans-serif;
+    font-size: 25px;
+    background-color: bisque;
+    border-radius: 15px;
+    color: saddlebrown
+}
+/* กำหนดรูปแบบของส่วนของเพื่อหาทั้งหมด*/
+.hobby{
+    display: flex; /* ให้แสดงผลเป็นส่วน*/
+    flex: wrap;/* นำแต่ละส่วนมาทำให้เป็นก้อนเดียวกัน*/
+    width: 80%;
+    background-color: beige;
+    border-radius: 30px;
+    color: saddlebrown;
+}
+/* กำหนดรูปแบบของรุปภาพที่แสดงอยู่ในเว็บ*/
+.img{
+    width: 35%;
+    height: 35%;
+    border-radius: 30px; 
+}
+   /* กำหนดรูปแบบที่เกี่ยวกับตัวอักษรในเนื้อหา */ 
+p{text-align: left;margin: 30px;
+    width: 60%;
+    }
+.footer{
+    display: block;
+    background-color: saddlebrown;
+}
+/* กำหนดรูขนาดของตัวอักษรในเนื้อหา เป็นการแยกเพื่อให้ไม่ไปรบกวนตัวที่ใช้ tag p เหมือนกัน */
+.pCV2{
+    font-size: 18px;
+}
+/* กำหนดtag p ในส่วนของ footer ให้เนื้อหามาอยุ่ตรงกลาง */
+    #pf{
+        text-align: center;
+    }
+/* กำหนดขนาดของหัวข้อใน งานดิเรก คือ  TVseries music */
+h4{
+    font-size: 22px;
+}
+/* กำหนดรูปแบบเพื่มเติมของปุ่มกดprevious*/
+#pBtn{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    background-color: bisque;
+    border-radius: 15px;
+    color: saddlebrown;
+    
+}
+/* กำหนดรูปแบบของหน้าจอแสดงผลเมื่อหน้าจอของอุปกรณ์ เล็กกว่า 900px*/
+@media only screen and (max-width: 900px){
+
+
+.hobby{
+    display: block; /* ไม่ใช้ flex แต่ใช้ block เพื่อให้ขอความเรียงต่อกันลงมา*/
+    width: 80%; /* กำหนดให้มีขนาดใหญ่ขึ้นเมื่อจอแสดงผลเล็กลง */
+    background-color: beige;
+    border-radius: 30px;
+    color: saddlebrown
+}
+/* กำหนดรูปแบบ ขนาด ของรูปภาพเพื่อ สามารถมองเห็นชัดเจน และใช้งานง่ายขึ้น*/
+.img{
+    width: 80%;
+    height: 80%;
+    border-radius: 30px;
+}
+}

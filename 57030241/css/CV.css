@@ -1,0 +1,102 @@
+/*กำหนดรูปแบบของส่วน Header */
+header{
+    background-color: darkgoldenrod;
+    text-align: center; /*กำหนดข้อความให้อยู่ตรงกลางเสมอ  */
+    color: lightgoldenrodyellow;/*กำหนดสีตัวอักษร */
+    text-decoration: underline;/*กำหนดรูปแบบตัวอักษรให้เป็นแบบขีดเส้นใต้ */
+    font-size: 30px;/*กำหนดขนาดตัวอักษร */
+    width: 100%;/* ให้มีความสามารถในการเป็น responsive */
+    font-family: Impact,  sans-serif; /*กำหนดรูปแบบอักษรเป็นตัวหนาและชื่อ ฟ้อน  */
+  
+}
+/* กำหนดรูปแบบแถบเมนูบาร์ทั้งหมด */
+#con-nav{
+
+    width: 100%;/* ให้มีความสามารถในการเป็น responsive */
+    height: 45px;/* กำหนดความสูงแถบเมนูบาร์ */
+    background-color:saddlebrown;
+ 
+}
+li{
+    list-style:none; /* กำหนดรูปแบบของแถบเมนู */
+    float: left; /* ให้เริ่มเรียงชิดกันจากทางด้านซ้าย */
+    display: block; /* ให้มีการแสดงผลเป็นบ็อค */
+    font-family: imp,  sans-serif ;
+    font-size: 20px;
+    height: 14px;
+    text-align: center;
+    padding:  16px; /* กำหนดระยะห่างภายในบล็อก */
+
+    
+}
+li:hover:not(#active) { /* เมื่อเม้ามาชี้จะทำให้บริเวณนั้นมีพื้นหลังสีดำ */
+    background-color:black;
+}
+.menu{
+    width: 100%;
+    text-decoration: none; /* กำหนดรูปแบบของ ตัวอักษร  */
+    color: lightgoldenrodyellow; 
+    
+}
+/* กำหนดรูปแบบของส่วนชื่อเรื่องในที่นี้คือ Curriculum Vitae*/
+h2{
+    font-family: sans-serif;
+    font-size: 35px;
+    background-color: lightpink;
+    border-radius: 15px;
+    color: brown
+}
+/* กำหนดรูปแบบของส่วนเนื้อหาทั้งหมด*/
+.container{
+    text-align: left;
+    width: 80%;
+    background-color: beige;
+    border-radius: 30px; /* สร้างขอบกลม*/
+    color: saddlebrown;
+}
+table{width:60%;} /* กำหนดขนาดของข้อมูลส่วนตัว*/
+/* ตั้งค่าลักษณะของรูปประจำตัว*/
+#img{
+    width: 25%;
+    height: 25%;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+/* กำหนดรูปแบบของส่วนที่เป็น tag p ทั้งหมด คือ ปุ่มกด next และ footer*/    
+p{text-align: left;margin: 30px;
+    width: 60%;
+    }
+.footer{
+    display: block;
+    background-color: saddlebrown;
+}
+/* กำหนดtag p ในส่วนของ footer ให้เนื้อหามาอยุ่ตรงกลาง */
+#pf{
+        text-align: center;
+    }
+/* กำหนดหัวตารางให้ไปชิดทางซ้าย*/
+th{
+    text-align: left;
+}
+/* กำหนดรูปแบบเพื่มเติมของปุ่มกด next*/
+#pBtn{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    background-color: bisque;
+    border-radius: 15px;
+    color: saddlebrown;
+    
+}
+/* กำหนดรูปแบบของหน้าจอแสดงผลเมื่อหน้าจอของอุปกรณ์ เล็กกว่า 900px*/
+@media only screen and (max-width: 900px){
+    /* กำหนดรูปแบบ ขนาด ของรูปภาพเพื่อ สามารถมองเห็นชัดเจน และใช้งานง่ายขึ้น*/
+    #img{
+    width: 70%;
+    height: 70%;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    }
+ 
+}

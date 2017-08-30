@@ -1,0 +1,197 @@
+body {
+    background-color: rosybrown; /*กำหนดสีพื้นหลังทั้งหมด*/
+    width: 100%; /* ให้มีความสามารถในการเป็น responsive */
+} 
+header{
+    text-align: center;  /*กำหนดข้อความให้อยู่ตรงกลางเสมอ  */
+    color: lightgoldenrodyellow; /*กำหนดสีตัวอักษร */
+    text-decoration: underline; /*กำหนดรูปแบบตัวอักษรให้เป็นแบบขีดเส้นใต้ */
+    font-size: 30px; /*กำหนดขนาดตัวอักษร */
+    width: 100%;/* ให้มีความสามารถในการเป็น responsive */
+    font-family: Impact,  sans-serif /*กำหนดรูปแบบอักษรเป็นตัวหนาและชื่อ ฟ้อน  */
+}
+#con-nav{
+
+    width: 100%; /* ให้มีความสามารถในการเป็น responsive */
+    height: 45px; /* กำหนดความสูงแถบเมนูบาร์ */
+    background-color:saddlebrown; /*กำหนดสีพื้นหลังแถบเมนูบาร์*/
+}
+/* ตั้งค่าแถบเมนูบาร์ */
+li{
+    list-style:none;  /* กำหนดรูปแบบของแถบเมนู */
+    float: left; /* ให้เริ่มเรียงชิดกันจากทางด้านซ้าย */
+    display: block; /* ให้มีการแสดงผลเป็นบ็อค */
+    font-family: sans-serif ;
+    font-size: 20px;
+    height: 14px;
+    text-align: center;
+    padding:  16px;/* กำหนดระยะห่างภายในบล็อก */
+    
+}
+/* ตั้งค่าแถบเมนูบาร์ */
+li:hover:not(#active) { /* เมื่อเม้ามาชี้จะทำให้บริเวณนั้นมีพื้นหลังสีดำ */
+    background-color:black;
+}
+/* กำหนดรูปแบบตัวอักษรในแถบเมนูบาร์  */
+.menu{
+    width: 100%;
+    text-decoration: none; 
+    color: lightgoldenrodyellow;    
+}
+/* รูปแบบข้อความ welcome */
+.container {
+    position:relative;
+    width: 100%;
+    margin-top: 50px;  /*ระยะห่างจากด้านบนเท่ากับ 50*/ 
+}
+/* รูปแบบตัวอักษรในข้อความ welcome */
+.text {
+  font-family: Impact,  sans-serif;
+  color:antiquewhite;
+  font-size: 45px;
+  padding: 16px 32px;
+text-align: center;
+}
+/* รูปแบบการแสดงผลของ footer */
+.footer{
+    display: block; /* รูปแบบการแสดงผลของ footer ให้แสดงเป็นบล็อก */
+    background-color: saddlebrown;
+}
+/* กำหนดรูปแบบของหน้าจอแสดงผลเมื่อหน้าจอของอุปกรณ์ ใหญ่กว่า 1200px*/
+@media only screen and (min-width: 1200px){
+.topic{  /* กำหนดให้มีขนาดใหญ่ขึ้นเมื่อจอแสดงผลเล็กลง */
+    width: 50%;
+    height: 50%;
+    margin-left: 5px;
+
+}
+     /* การใส่ flex เพื่อให้ข้อความเรียงต่อกัน */
+.bigTopic{
+     display: flex;
+    flex: wrap;
+    color: azure;
+    text-align: center;
+   font-family: imp,sans-serif;
+    font-size: 22px;
+ 
+}
+    /* กำหนดรูปแบบ ขนาด ของรูปภาพเพื่อ สามารถมองเห็นชัดเจน และใช้งานง่ายขึ้น*/
+.img{
+    width: 70%;
+    border-radius: 30px;/* กำหนดขอบรูปภภาพเพื่อความสวยงาม*/
+}
+}/* ปิดการตั้งค่าหน้าจอใหญ่กว่า  1200px*/
+
+h2{ /*ตั้งค่า คำว่า This site is about*/
+    color:floralwhite;
+    text-align: center;
+    font-family: impact,sans-serif;
+}
+/*-------------------------*/
+/* The Modal (background) */
+.modal {
+    display: none; /* ให้มีการซ่อนข้อความไว้ก่อน  */
+    position: fixed; /*อยู่นิ่งจนกว่่าจะมีการกด*/
+    z-index: 1; /* ให้อยู่ใน index แรกเพื่อเมื่อเรียกแล้วจะได้ออกมาเลย */
+    left: 0;
+    top: 0;
+    width: 100%; /* กำหนดขนาดให้กว้างที่สุด */
+    height: 100%; /* มีความสูงพอดีกับ */
+    overflow: auto; 
+    background-color: rgb(0,0,0); /* สีแบคกราวเมื่อมีการกดปุ่มเปิดแถบเลือกข้อความ */
+    background-color: rgba(0,0,0,0.4); /* สีพื้นหลังมีความโปรงแสสง*/
+    -webkit-animation-name: fadeIn; /*แถบเลือกข้อความค่อย ๆ ปรากฏขึ้นมา */
+    -webkit-animation-duration: 0.4s; /*ระยะเวลาที่แถบเลือกข้อความค่อย ๆ เลื่อนปรากฏขึ้นมา */
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/*การตั้งค่าบริเวณข้อความที่ให้เลือก */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn; /*แถบเลือกข้อความค่อยๆ ปรากฏสไลด์ขึ้นมา */
+    -webkit-animation-duration: 0.4s; /*ระยะเวลาที่แถบเลือกข้อความค่อย ๆ เลื่อนปรากฏขึ้นมา */
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* ส่วนการตั้งค่าปุ่มกดปิด */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,/*เมื่อมีเม้ามาอยู่เหนือปุ่มปิด มันจะกลายเป็นสีดำ และให้ โฟกัสบริเวณนั้น */
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*ตั้งค่าส่วน Head ของแถบเลือกข้อความ */
+.modal-header {
+    padding: 2px 16px;
+    background-color:chocolate;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: chocolate;
+    color: white;
+}
+
+/* สร้าง แอนนิเมชันในการทำงาน */
+@-webkit-keyframes slideIn { /* กำหนดรูปแบบการสไลด์เข้ามา  */
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn { /* กำหนดรูปแบบการค่อยๆ ปรากฏขึ้นมา  */
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+/* ตั้งค่ารูปแบบของปุ่มกด  */
+#myBtn{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rosybrown;
+    border-radius: 30px;
+    color: azure;
+}
+/*-------------------------*/
+/* กำหนดรูปแบบของหน้าจอแสดงผลเมื่อหน้าจอของอุปกรณ์ เล็กกว่า 900px*/
+@media only screen and (max-width: 900px){
+    .text {
+        font-size: 40px;}
+    .bigTopic{
+    color:floralwhite;
+    text-align: center;
+   font-family: imp ,sans-serif;
+    font-size: 22px;
+        
+}
+    .img{
+    width: 70%;
+    border-radius: 30px;
+}
+    .topic{
+    margin-left: 5px;
+}
